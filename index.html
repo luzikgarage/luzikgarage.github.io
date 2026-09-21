@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="Luzik Garage — niezależny projekt mechaniczny, własny warsztat i Luzik Garage Diagnostics.">
+<title>LUZIK GARAGE — BUILD FROM ZERO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div id="cursor"></div>
+<div id="cursorTrail"></div>
+<div id="boot">
+  <div class="boot-noise"></div>
+  <canvas id="bootCanvas"></canvas>
+  <div class="boot-top"><span>LG // CORE SYSTEM</span><span id="bootClock">00:00:00</span></div>
+  <div class="boot-core">
+    <div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div>
+    <div class="boot-logo">LG</div>
+    <div class="boot-name">LUZIK GARAGE</div>
+  </div>
+  <div class="boot-terminal" id="bootTerminal"></div>
+  <div class="boot-progress"><span id="bootStatus">INITIALIZING SYSTEM</span><b id="bootPercent">0%</b><div><i id="bootBar"></i></div></div>
+</div>
+
+<header class="nav">
+  <a class="nav-logo" href="#home"><b>LG</b><span>LUZIK GARAGE</span></a>
+  <nav>
+    <a href="#home">01 / HOME</a>
+    <a href="#garage">02 / PROJECT</a>
+    <a href="#diagnostics">03 / DIAGNOSTICS</a>
+    <a href="#versions">04 / VERSIONS</a>
+    <a href="#contact">05 / CONTACT</a>
+  </nav>
+  <button class="menu-btn" aria-label="Menu"><span></span><span></span></button>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <canvas id="heroCanvas"></canvas>
+  <div class="hero-grid"></div>
+  <div class="hero-copy reveal">
+    <div class="eyebrow"><i></i> INDEPENDENT AUTOMOTIVE PROJECT / 2026</div>
+    <h1>BUILD<br><em>THE</em><strong>TOOL.</strong></h1>
+    <p>Własny system diagnostyczny. Własny kierunek. Budowany od zera.<br>Nie czekam, aż ktoś zrobi go za mnie.</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#diagnostics">EXPLORE DIAGNOSTICS <span>↗</span></a>
+      <a class="btn ghost" href="#versions">VIEW VERSIONS <span>↓</span></a>
+    </div>
+  </div>
+  <div class="hero-machine reveal">
+    <div class="machine-ring r1"></div><div class="machine-ring r2"></div><div class="machine-ring r3"></div>
+    <div class="machine-core"><span>LG</span><small>GARAGE<br>CORE</small></div>
+    <div class="machine-data"><span>CORE</span><b>ONLINE</b><span>STATUS</span><b>BUILDING</b></div>
+  </div>
+  <div class="hero-scroll">SCROLL TO EXPLORE <span>↓</span></div>
+  <div class="hero-code">LG.001 / SYSTEM / 192.0.0.1<br>NO LIMITS / NO TEMPLATE / OWN BUILD</div>
+</section>
+
+<section class="section split" id="garage"><div class="section-head reveal"><span>01</span><h2>THE PROJECT</h2></div><div class="split-grid"><div class="reveal"><div class="eyebrow">LUZIK GARAGE / FROM ZERO</div><h3>Nie kolejny skaner.<br><strong>Własny system.</strong></h3><p>Luzik Garage Diagnostics to rozwijany od podstaw projekt własnego środowiska do diagnostyki pojazdów. Pierwszy kierunek to VAG, a kolejne możliwości będą dokładane wraz z rozwojem systemu.</p><p>Założenie jest proste: narzędzie ma nie tylko pokazać błąd, ale pomóc zrozumieć problem i przejść przez diagnostykę krok po kroku.</p></div><div class="terminal-card reveal"><div class="terminal-top"><span></span><span></span><span></span><b>LG_DIAGNOSTICS</b></div><div class="terminal-body"><p>&gt; booting luzik_garage_diagnostics...</p><p>&gt; loading diagnostic core</p><p>&gt; VAG module .............. <strong>ONLINE</strong></p><p>&gt; DTC database ............ <strong>ONLINE</strong></p><p>&gt; vehicle communication .. <strong>DEVELOPMENT</strong></p><p class="terminal-cursor">&gt; system status: BUILDING_</p></div></div></div></section>
+
+<section class="section dark" id="diagnostics"><div class="section-head reveal"><span>02</span><h2>DIAGNOSTICS CORE</h2></div><div class="diag-intro reveal"><div><div class="eyebrow">CURRENT BUILD</div><h3>Od systemu do<br><strong>realnego narzędzia.</strong></h3></div><p>Projekt rozwija się etapami. Najpierw działająca baza, później kolejne moduły, komunikacja z pojazdem i funkcje, które mają sprawić, że Luzik Garage Diagnostics będzie czymś więcej niż odczytem kodów DTC.</p></div><div class="diag-grid"><article class="diag-box reveal"><small>CORE 01</small><h4>VAG</h4><p>Pierwszy obszar rozwoju: Volkswagen, Audi, SEAT i Škoda.</p><b>ACTIVE</b></article><article class="diag-box reveal"><small>CORE 02</small><h4>DTC</h4><p>Baza kodów i informacje potrzebne do dalszej diagnostyki.</p><b>ACTIVE</b></article><article class="diag-box reveal"><small>CORE 03</small><h4>VEHICLE DATA</h4><p>Struktura danych pojazdów i modułów przygotowana pod kolejne etapy.</p><b>BUILDING</b></article><article class="diag-box reveal"><small>CORE 04</small><h4>COMMUNICATION</h4><p>Warstwa komunikacji z elektroniką pojazdu rozwijana jako osobny moduł.</p><b>BUILDING</b></article></div></section>
+
+<section class="section" id="versions"><div class="section-head reveal"><span>03</span><h2>THE ROADMAP</h2></div><div class="project-grid"><a class="project-card reveal" href="pages/basic.html"><span>01 / FOUNDATION</span><h3>BASIC</h3><p>Pierwsza mała, działająca wersja. Fundament całego systemu i punkt startowy do dalszego rozwoju.</p><b>EXPLORE →</b></a><a class="project-card reveal" href="pages/pro.html"><span>02 / EXPANSION</span><h3>PRO</h3><p>Rozszerzenie systemu o bardziej zaawansowane moduły diagnostyczne i większy zakres pracy.</p><b>EXPLORE →</b></a><a class="project-card reveal" href="pages/max.html"><span>03 / VISION</span><h3>MAX</h3><p>Dalszy kierunek rozwoju projektu. Największy zakres funkcji przewidziany w roadmapie.</p><b>EXPLORE →</b></a><a class="project-card reveal featured" href="pages/tune.html"><span>04 / NEXT TOOL</span><h3>DIAGNOSTICS TUNE</h3><p>Osobny kierunek projektu związany z pracą nad mapami ECU. Tu można już zajrzeć trochę głębiej.</p><b>ENTER CONCEPT →</b></a></div></section>
+
+<section class="manifesto">
+  <div class="manifesto-noise"></div>
+  <span class="reveal">LUZIK GARAGE</span>
+  <h2 class="reveal">DON'T WAIT<br>FOR THE PERFECT<br><em>MOMENT.</em></h2>
+  <p class="reveal">Build the first version. Break it. Learn. Build it again.</p>
+</section>
+
+<section class="section split" id="contact"><div class="section-head reveal"><span>04</span><h2>CONTACT</h2></div><div class="contact-grid"><div class="reveal"><div class="eyebrow">LUZIK GARAGE</div><h3>Chcesz zobaczyć,<br><strong>dokąd to zmierza?</strong></h3><p>Projekt jest rozwijany etapami. Jeśli interesuje Cię współpraca, sprzęt testowy albo sam kierunek Luzik Garage Diagnostics — napisz.</p></div><div class="contact-card reveal"><p><small>EMAIL</small><a href="mailto:zegarskidaniel@gmail.com">zegarskidaniel@gmail.com</a></p><p><small>TIKTOK</small><span>@luzikgarage</span></p><p><small>INSTAGRAM</small><span>@arriderx</span></p></div></div></section>
+</main>
+
+<footer>
+  <span>© 2026 LUZIK GARAGE</span>
+  <span>BUILT FROM ZERO / POLAND</span>
+  <span>LG SYSTEM // ONLINE</span>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
